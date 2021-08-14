@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #1e1e1e;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 18px;
+    height: 100%;
+    overflow: auto;
+}
+
+.nav-bar {
+    background-color: #2b2b2b;
+    color: whitesmoke;
+    border-bottom: #c71157 solid 5px;
+    min-width: 575px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    min-width: 575px;
+    max-width: 800px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 200px;
+    height: 90%;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    width: 550px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    display: block;
+    height: 40px;
+    width: 80px;
+    line-height: 40px;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    height: 40px;
+    width: 80px;
+}
+
+li:hover {
+    background-color: aliceblue;
+    transition: 0.6s ease;
+}
+
+.log {
+    background-color: #c71157;
+    border-radius: 10px;
+    margin: 0 30px;
+    padding: 0;
+    width: 70px;
+    height: 40px;
+}
+
+.log a:hover {
+    color: #c71157;
+}
+
+.log a {
+    display: inline-block;
+    color: aliceblue;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #c71157;
+}
+
+/*==========================
+Corpo principal
+============================*/
+.caixa-global {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 105px);
+    width: 100%;
+    min-width: 575px;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    width: 60%;
+    max-width: 800px;
+    min-width: 575px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #222;
+    color: #cacaca;
+    padding: 20px;
+    margin-top: 20px;
+    width: 45%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #0e0e0e;
+}
+
+.logo-curso {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+hr {
+    margin: 10px auto;
+    color: lightskyblue;
+}
+
+p {
+    text-align: start;
+    line-height: 1.8rem;
+    color: #cacaca;
+}
+
+button {
+    width: 50%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #c71157;
+    color: aliceblue;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    color:#c71157;
+    background-color: aliceblue;
+    transition: 0.6s ease;
+}
+
+/*===================
+        perfil
+=====================*/
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info {
+    background-color: #222;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 8px #0e0e0e;
+}
+
+.info p {
+    line-height: 2.2rem;
+    color: rgb(245, 245, 245);
+}
+
+h3 {
+    margin: 10px 0;
+    color: aliceblue;
+}
+
+.alice {
+    color: rgb(182, 182, 182);
+}
+.info button {
+    width: 20%;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+/**         TABELA     **/
+
+.tab-resultado {
+    border-radius: 5px;
+    background-color: #222;
+    margin-top: 20px;
+    box-shadow: 0px 0px 8px #0e0e0e;
+}
+
+table {
+    width: 100%;
+}
+
+
+th, td {
+    width: 16.5%;
+    text-align: center;
+    color: aliceblue;
+}
+
+tr {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgb(70, 70, 70) solid 1px;
+}
+
+.tab-resultado th, td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(202, 202, 202);
+}
+
+.form-nota {
+    display: flex;
+    justify-self: center;
+    max-width: 150px;
+}
+
+.form-nota input {
+    width: 80%;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+}
+
+i {
+    display: inline-block;
+    margin: 0 5px;
+    color: #c71157;
+    font-size: 0.8rem;
+}
+
+.div-i {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*===================
+        LOGIN
+======================*/
+.col-login {
+    height: 70vh;
+    align-items: center;
+}
+
+.caixa-login {
+    background-color: #222;
+    color: aliceblue;
+    border-radius: 5px;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #0e0e0e;
+}
+
+.logo-login {
+    width: 30%;
+    margin: auto;
+}
+
+.div-input {
+    margin: 15px auto;
+}
+
+.caixa-login input {
+    background-color: #222;
+    color: aliceblue;
+    width: 100%;
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 5px;
+
+    border-style: none none solid none;
+    border-color: #c71157;
+    outline: none;
+}
+
+
+/*===================
+        FOOTER
+=====================*/
+
+footer {
+    background-color: #292929;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: aliceblue;
+}
+
+@media (min-width: 1200px) {
+    .nav-container {
+        width: 80%;
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+
+    .caixa-global {
+        width: 100%;
+        height: calc(100% - 105px);
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1180px;
+        margin: 20px auto;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .nav-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .caixa-global {
+        width: 100%;
+        height: calc(100% - 105px);
+    }
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    i {
+        font-size: 0.5rem;
+    }
+
+    li {
+        font-size: 1.2rem;
+    }
+    .nav-container {
+        width: 100%;
+        height: 110px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .logo {
+        height: 40%;
+        width: 100px;
+    }
+
+    .caixa-global {
+        width: 100%;
+        height: calc(100% - 115px);
+    }
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        overflow: auto;
+    }
+
+    i {
+        font-size: 0.5rem;
+    }
+
+    li {
+        font-size: 1.2rem;
+    }
+
+    .nav-bar {
+        width: 575px;
+    }
+    
+    .nav-container {
+        width: 575px;
+        height: 110px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .logo {
+        height: 40%;
+        width: 100px;
+    }
+
+
+    .caixa-global {
+        height: calc(100% - 115px);
+    }
+
+
+    .card {
+        width: 80%;
+        max-width: none;
+        padding: 5px;
+    }
+
+}
